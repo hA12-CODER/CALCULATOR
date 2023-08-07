@@ -1,0 +1,85 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title> HTML CALULATOR </title>
+    </head>
+    <style>
+        table{
+            border: 1px solid black;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        input[type="button"]
+        {
+            width:100px;
+            padding:20px 40px;
+            background-color:yellow;
+            font-size:24px;
+            border-radius:5px;
+        }
+        input[type="text"]
+        {
+            padding:20px 40px;
+            text-align:right;
+            font-size:24px;
+            border-radius:5px;
+            border: 2px solid black;
+        }
+        .phone
+        {
+            border : 2px solid grey;
+            height: 200px;
+            width : 300px;
+            background-color:yellow;
+
+            
+
+        }
+    </style>
+    <body>
+    <table id="calcu">
+        <tr>
+            <td colspan="3">
+                <input type="text" id="input" value="0">
+            </td>
+        
+        <td><input type="button" onclick="getClr()" value="clear"></td>
+        
+        </tr>
+        
+  
+        <tr>
+            <td><input type="button" onclick="getval('1')" class="btn"   value="1"></td>
+            <td><input type="button" onclick="getval('2')" class="btn"   value="2"></td>
+            <td><input type="button" onclick="getval('3')" class="btn"   value="3"></td>
+            <td><input type="button" onclick="getval('/')" class="btn"   value="/"></td>
+        </tr>
+
+        
+
+        <tr>
+            <td><input type="button" onclick="getval('4')" class="btn" value="4"></td>
+            <td><input type="button" onclick="getval('5')" class="btn" value="5"></td>
+            <td><input type="button" onclick="getval('6')" class="btn" value="6"></td>
+            <td><input type="button" onclick="getval('*')"   class="btn" value="*"></td>
+        </tr>
+        <tr>
+            <td><input type="button"  onclick="getval('7')" class="btn" value="7"></td>
+            <td><input type="button"  onclick="getval('8')" class="btn" value="8"></td>
+            <td><input type="button"  onclick="getval('9')" class="btn" value="9"></td>
+            <td><input type="button" onclick="getval('-')" class="btn" value="-"></td>
+        </tr>
+        <tr>
+            <td><input type="button" onclick="getval('0')" class="btn"value="0"></td>
+            <td><input type="button" onclick="getval('.')" class="btn"value="."></td>
+            <td><input type="button" onclick="getAns('')" class="btn"value="="></td>
+            <td><input type="button" onclick="getval('+')" class="btn"value="+"></td>
+        </tr>
+        <div class="phone" align="center" > 
+        
+        </div>
+    </table>
+    
+    <script src="index.js\index.js"></script>
+    </body>
+    </html>
